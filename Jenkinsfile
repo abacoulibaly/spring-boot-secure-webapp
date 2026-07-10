@@ -7,17 +7,27 @@ pipeline {
             steps {
             
                       echo " echo without Docker !"
-                                }
-                     }
+                           }
+                                 }
 	   
 	        }
-	     stage(' Stage 2 ') {
-             steps {
-            
-                      echo " echo without Docker !"
-				      ls -la
-                                }
-                     }
-	   
-	        }
-	   
+	  
+
+
+stage('stage-2') 
+		 {
+           
+            steps {
+                      sh '''
+                      echo " echo With Docker !"
+                      ls -la
+                      touch container-yes.txt
+                     '''
+                   }
+        }
+
+
+
+
+
+	  }
