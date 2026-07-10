@@ -11,8 +11,8 @@ pipeline {
                      }
 	   
 	        }
-	 stage(' Stage 2 ') {
-            steps {
+	     stage(' Stage 2 ') {
+             steps {
             
                       echo " echo without Docker !"
 				      ls -la
@@ -20,4 +20,4 @@ pipeline {
                      }
 	   
 	        }
-	   }
+	   
