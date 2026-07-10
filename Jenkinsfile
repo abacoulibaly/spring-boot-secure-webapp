@@ -14,7 +14,7 @@ pipeline {
 	  
 
 
-stage('stage-2') 
+stage('Testining') 
 		 {
            
             steps {
