@@ -10,6 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 class SecuringWebApplication {
 
+	// start the appliction
+
 	public static void main(String[] args) {
 		SpringApplication.run(SecuringWebApplication.class, args);
 	}
